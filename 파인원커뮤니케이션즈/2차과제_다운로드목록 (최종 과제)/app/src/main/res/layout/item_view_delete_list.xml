@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="item"
+            type="com.example.mypage.DownloadDto" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_marginHorizontal="21dp"
+    android:layout_marginVertical="8dp">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:button="@null"
+        android:background="@drawable/delete_checkbox"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        itemDeleteCheckbox="@{item}"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        app:layout_constraintWidth_percent="0.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@id/checkbox"
+        app:layout_constraintEnd_toStartOf="@id/titleText"
+        app:cardCornerRadius="8dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@null"
+                itemThumbnailVisible="@{item.posterUrl}"/>
+
+            <ImageView
+                android:visibility="invisible"
+                android:id="@+id/adultType"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/flag_19"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="10dp"
+                itemAdultVisible="@{item}"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/titleText"
+        app:layout_constraintWidth_percent="0.35"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toEndOf="@id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@{item.contNm}"/>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/contentType"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:src="@drawable/flag_ar"
+        android:layout_marginStart="3dp"
+        android:layout_marginVertical="5dp"
+        app:layout_constraintStart_toStartOf="@+id/titleText"
+        app:layout_constraintBottom_toTopOf="@id/titleText"
+        itemTypeSetting="@{item}"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

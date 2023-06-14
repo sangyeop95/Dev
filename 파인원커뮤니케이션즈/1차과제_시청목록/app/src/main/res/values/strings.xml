@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyPage</string>
+    <string name="title_text">타이틀 텍스트타이틀 텍스트타이틀 텍스트타이틀 텍스트타이틀 텍스트타이틀 텍스트타이틀 텍스트타이틀 텍스트타이틀 텍스트</string>
+    <string name="description">다양한 콘텐츠가\n고객님을 기다리고 있어요.\n\n상상이 현실이 되는 새로운 세계로\n지금 바로 떠나보세요!</string>
+    <string name="btntext">데이터 추가</string>
+    <string name="popup_text_alldelete">시청 목록이 모두 삭제됩니다.\n전체 삭제를 진행하시겠습니까?</string>
+    <string name="popup_text_delete">개의 콘텐츠를 삭제하시겠습니까?</string>
+    <string name='all_content_count_number'>(전체 %1$d개)</string>
+    <string name="content_price">%1$d원 입니다.</string>
+    <string name="watch_type_normal_text">일반</string>
+    <string name="watch_type_teenager_text">15세이용가</string>
+</resources>

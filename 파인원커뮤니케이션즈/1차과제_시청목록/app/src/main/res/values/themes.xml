@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyPage" parent="Theme.AppCompat.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="android:statusBarColor">#090d19</item>
+        <item name="android:navigationBarColor">#151625</item>
+        <item name="colorAccent">#EF3284</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

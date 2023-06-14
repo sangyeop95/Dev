@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "7615614049",
+    "firebase_url": "https://turnkey-pottery-93123.firebaseio.com",
+    "project_id": "turnkey-pottery-93123",
+    "storage_bucket": "turnkey-pottery-93123.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:7615614049:android:cc2c192f7e3db66e",
+        "android_client_info": {
+          "package_name": "com.example.woorimanager_payment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "7615614049-9vcji59bd06ci4ec98fnjtd2tkeo52nb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqzpx3JXekcDCtVp1eI68B3dH6EUkP2GQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "7615614049-9vcji59bd06ci4ec98fnjtd2tkeo52nb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
